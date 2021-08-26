@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    // 1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100
+    let i = 0;
+    while(i < 100)
+      console.log(i);
+
+//       2. С этого урока начинаем работать с функционалом интернет-магазина. Предположим, есть
+// сущность корзины. Нужно реализовать функционал подсчета стоимости корзины в
+// зависимости от находящихся в ней товаров
+    let basket = [];
+
+//     3. Товары в корзине хранятся в массиве. Задачи:
+// a. Организовать такой массив для хранения товаров в корзине;
+// b. Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
+
+    function countBasketPrice(basket){
+      
+      let totalCost = 0;
+      for (v of basket){
+        totalCost += v;
+      }
+      return totalCost;
+    }    
+    
+
+    </script>
+</head>
+<body>
+</body>
+</html>
